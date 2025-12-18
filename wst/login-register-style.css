@@ -1,0 +1,182 @@
+/* ==================================== */
+/* LOGIN & REGISTER STYLES (Blue Theme) */
+/* ==================================== */
+
+/* Background sama dengan hero section di index */
+.login-container {
+  min-height: calc(100vh - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  /* Perbaikan: Gradient yang lebih cerah dan lembut */
+  background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%); 
+}
+
+/* Login Box */
+/* login-register-style.css */
+/* login-register-style.css */
+.login-box {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 
+              0 5px 15px rgba(0, 0, 0, 0.05); 
+  padding: 40px;
+  width: 90%; /* Tetapkan lebar relatif */
+  max-width: 450px; 
+  margin: 0 auto; /* Tambahkan margin auto untuk centering */
+  position: relative;
+}
+
+/* Header login */
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  font-size: 2rem; /* Ukuran lebih besar */
+  font-weight: 700;
+}
+
+.login-header p {
+  color: #64748b;
+  font-size: 1rem; 
+  line-height: 1.5;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Perbaikan: Tampilan input field */
+.form-control {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e2e8f0; /* Border lebih tebal */
+  border-radius: 10px; /* Radius konsisten */
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f9fafb; /* Background abu-abu muda */
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #1d4ed8; /* Warna biru branding saat focus */
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.2); /* Shadow biru yang menonjol */
+  background: white;
+}
+
+/* Tombol */
+.btn-login {
+  width: 100%;
+  padding: 14px 24px;
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 10px; /* Radius konsisten */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(29, 78, 216, 0.3); /* Shadow lebih kuat */
+}
+
+.btn-login:active {
+  background: #15389d; /* Warna biru lebih gelap saat diklik */
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.95rem; /* Ukuran sedikit lebih besar */
+}
+
+.login-footer a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600; /* Font weight lebih tebal */
+  transition: color 0.2s ease;
+}
+
+.login-footer a:hover {
+  color: #1e40af; /* Warna hover yang lebih gelap */
+  text-decoration: underline;
+}
+
+/* Perbaikan Alert styling */
+.alert {
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  border-left: 5px solid transparent; /* Border kiri tebal */
+  font-weight: 500;
+}
+
+.alert-error {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border-color: #ef4444; /* Merah cerah */
+}
+
+.alert-success {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border-color: #22c55e; /* Hijau cerah */
+}
+
+/* Info box untuk demo credentials */
+.demo-credentials {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #1d4ed8;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.demo-credentials strong {
+  color: #1e3a8a;
+}
+
+.demo-credentials code {
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 30px 20px;
+    /* Tambahkan margin horizontal agar tidak mepet ke pinggir layar */
+    margin: 0 20px; 
+    width: auto; /* Biarkan lebar menyesuaikan margin */
+    max-width: none; /* Hilangkan batasan max-width pada layar kecil */
+  }
+}
